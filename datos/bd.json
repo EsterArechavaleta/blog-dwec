@@ -1,0 +1,22 @@
+{
+    "blogs": [
+            {
+                "titulo": "Mi nueva web",
+            " body": "texto para mostrar...",
+            "autor": "Joan", 
+            "id": 1
+        },
+        {
+            "titulo": "Fiesta de Blas",
+            "body": "mucho mas texto...",
+            "autor": "Pedro", 
+            "id": 2
+        },
+        {
+            "titulo": "Merienda", 
+            "body": "mas comida...",
+            "autor": "Marta", 
+            "id": 3
+        }
+    ]
+}

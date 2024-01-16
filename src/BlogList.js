@@ -4,7 +4,7 @@
 // es un objeto:
 // Se puede enviar el objeto desestructurado, no hace falta siemore
 // enviar objeto completo:
-const BlogList = ({titulo, blogs, handleEliminarBlog}) => {
+const BlogList = ({titulo, blogs}) => {
 
     // aqui se recibe la variable, y como props es un objeto
     // accedemos a blogs, que lo contiene, era un array de objetos
@@ -24,7 +24,7 @@ const BlogList = ({titulo, blogs, handleEliminarBlog}) => {
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.titulo}</h2>
                     <p>Escrito por { blog.autor}</p>
-                    <button onClick={ ()=>handleEliminarBlog(blog.id)}>Elimina blog</button>
+                  
                 </div>)
             }) }
 
@@ -33,3 +33,11 @@ const BlogList = ({titulo, blogs, handleEliminarBlog}) => {
 }
  
 export default BlogList;
+
+/**
+ * /blogs      GET Devuelve todos los blogs
+ * /blogs/{id} GET Devuelve un único blog
+ * /blogs      POST Añadir un nuevo blog
+ * /blogs/{id} DELETE Eliminar un blog
+ * 
+ */
